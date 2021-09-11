@@ -1,0 +1,24 @@
+===========================
+     MAP DOCUMENTATION	
+===========================
+
+There are multiple different object types that
+	are useable in the map files. Each type is an array
+	defined by the type's name holding individual objects of
+	that type.
+
+"lines":
+	Lines are the basis of all walls.
+	They are defined with a starting position, and an end position.
+	"x": The starting x position
+	"y": The starting y position
+	"x1": The ending x position
+	"y1": The ending y position
+
+"blocks": 
+	Blocks are rectangles of lines.
+	They are defined with an x, y, width, and height.
+	"x": The x position
+	"y": The y position
+	"w": The width
+	"h": The height
