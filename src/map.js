@@ -2,6 +2,7 @@ class Map {
 	constructor(map) {
 		// Load the json file
 		let URL = './maps/' + map + '.json';
+		print('loading ' + URL);
 		this.json = loadJSON(URL);
 	}
 
@@ -14,6 +15,7 @@ class Map {
 
 	loadLines() {
 		let lines = this.json.lines;
+		print(lines);
 
 		for (let i = 0; i < lines.length; i++) {
 			let l = lines[i];
@@ -25,7 +27,7 @@ class Map {
 
 	loadBlocks() {
 		let blocks = this.json.blocks;
-		print("Blocks: " + blocks);
+		print(blocks);
 		
 		for (let i = 0; i < blocks.length; i++) {
 			Map.createBlock(blocks[i]);
